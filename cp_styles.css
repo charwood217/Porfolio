@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*
+Name: Christian Harwood
+Date: 10/10/19
+filename: cp_styleH.css
+*/
+/*HTML styles*/
+
+    /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    
+    html {
+        height: 2000px;
+        background-color: black;
+        background-size: 100% auto;
+        background-position: top center;
+        background-attachment: fixed;
+        }
+     */
+html{
+    background: url(cp_back1.png) 1%/ cover;
+}
+@font-face{
+    font-family: H1;
+    src:url(sprague.ttf) format('truetype'),
+        url(sprague.woff) format('woff'),
+        url(sprague.woff2) format('woff2');
+}
+
+/*Body Styles*/
+body{
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 10px solid lightblue;
+}
+h1#head{
+    text-align: center;
+    font-size: 2em;
+    font-family: H1, serif;
+    padding: 20px 20px 20px 20px;
+    color: lightblue;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+
+}
+/*Section#about*/
+/* section#about{
+    display: none;
+} */
+/*div styles*/
+#row::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+#row{
+    border:  5px solid lightblue;
+}
+.row::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+div[class^="col-"]{
+    float: left;
+}
+.col-1-2{
+    width: 50%;
+    background-color: grey;
+}
+#col-1-2{
+    width: 50%;
+    float: left;
+    /* border:  5px solid lightblue; */
+}
+.col-1-4{
+    width: 25%;
+}
+/*section styles*/
+section{
+    color: lightblue;
+    text-shadow: white 1px 1px 5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4.2%;
+}
+/*nav styles*/
+nav ul li{
+    padding:10px;
+    background-color: grey;
+    border: double 1px lightblue;
+    text-align: center;
+}
+nav ul li a:link, a:visited, li:link, li:visited{
+    color: white;
+}
+nav ul li a:hover, a:active, li:hover, li:active{
+    background-color: lightblue;
+  color: black
+}
+footer{
+   color: white;
+   text-align: center;
+   padding: 2%;
+   background-color: grey;
+}
+
+img#content{
+    height: 100%;
+    display: block;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:3.5%;
+}
+img#fuzz{
+    width: 86%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+@media only screen and (max-width: 480px){
+
+}
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+@media only screen and (min-width: 481px){
+    
+}
