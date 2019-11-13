@@ -20,8 +20,11 @@ filename: cp_styleH.css
         background-attachment: fixed;
         }
      */
-html{
+/* html{
     background: url(cp_back1.png) 1%/ cover;
+} */
+html{
+    background: linear-gradient(90deg, black,lightblue);
 }
 @font-face{
     font-family: H1;
@@ -37,6 +40,8 @@ body{
     margin-right: auto;
     width: 80%;
     border: 10px solid lightblue;
+    /* box-shadow:black 10px 10px 5px,
+                black -10px -10px 5px; */
 }
 h1#head{
     text-align: center;
@@ -123,7 +128,7 @@ img#content{
     padding:3.5%;
 }
 img#fuzz{
-    width: 86%;
+    width: 82%;
     display: block;
     text-align: center;
     padding: 15px;
