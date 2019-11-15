@@ -89,6 +89,10 @@ div[class^="col-"]{
 .col-1-4{
     width: 25%;
 }
+.col-1-5{
+    width: 20%;
+    font-size: 12px;
+}
 /*section styles*/
 section{
     color: lightblue;
@@ -118,7 +122,9 @@ footer{
    padding: 2%;
    background-color: grey;
 }
-
+body{
+    margin-top: 200px;
+}
 img#content{
     height: 100%;
     display: block;
@@ -132,6 +138,30 @@ img#fuzz{
     display: block;
     text-align: center;
     padding: 15px;
+}
+h1{
+    font-size: 2em;
+    padding:5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1#nl{
+    margin-left: 50px;
+}
+h4{
+    padding: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p a:visited, a:link{
+    text-decoration: none;
+    color: white;
+}
+p a:hover, a:active{
+    text-decoration: none;
+    color: grey;
 }
 
 /* ============================================
